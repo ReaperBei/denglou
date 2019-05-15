@@ -6,6 +6,7 @@ import router from './router'
 import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './static/css/commonality.less'
+import './static/css/icon.less'
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */

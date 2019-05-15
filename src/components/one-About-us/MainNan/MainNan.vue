@@ -1,25 +1,54 @@
 <template>
-  <div class="container">
-    <ul class="mainnan container clearfix">
+  <header class="container clearfix mainnan-header">
+    <div class="mainnan-logo"><img src="../../../static/images/index-logo.png" alt=""></div>
+    <ul class="mainnan container t-f-20 ">
       <li><router-link to="/">首页</router-link></li>
       <li>
         <router-link to="/two">家政</router-link>
       </li>
-      <li>月嫂</li>
-      <li>催乳师 </li>
-      <li>育儿嫂</li>
-      <li>保姆</li>
-      <li>城市合伙</li>
-      <li>个人中心</li>
+      <li><router-link to="/three">月嫂</router-link></li>
+      <li><router-link to="/four">催乳师</router-link></li>
+      <li><router-link to="/five">育儿嫂</router-link></li>
+      <li><router-link to="/six">保姆</router-link></li>
+      <li><router-link to="/seven">城市合伙</router-link></li>
+      <li><router-link to="/eight">个人中心</router-link></li>
     </ul>
-  </div>
+  </header>
 </template>
 <script>
 export default {}
 </script>
 <style lang="less" scoped>
+  @import "../../../static/css/commonality";
+  .mainnan-header {
+    height: 100px;
+    position: relative;
+    z-index: 9999;
+  }
+  .mainnan-logo {
+    display: inline-block;
+    position: absolute;
+  }
+  .mainnan {
+    position: absolute;
+    right: 0;
+    min-width: 850px;
+    top: 0px;
+  }
   .mainnan li{
     float: left;
-    width: 100px;
+    padding: 39px 5px 5px;
+    color: #000;
+    border-top: 3px solid transparent;
+    margin: 0 20px;
+    overflow: hidden;
+    display: inline-block;
+    &:hover{
+      color: red;
+      border-top: 3px solid @colordeep;
+    }
+  }
+  router-link {
+    color: red;
   }
 </style>

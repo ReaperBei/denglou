@@ -6,8 +6,8 @@
   </div>
 </template>
 <script>
-import Topnav from './components/one-About-us/MainNan/MainNan.vue' //导航
-import Footer from './components/one-About-us/Footer/footer.vue'  //底部
+import Topnav from './components/one-About-us/MainNan/MainNan.vue'
+import Footer from './components/one-About-us/Footer/footer.vue'
 export default {
   components: {
     Topnav,
