@@ -1,8 +1,8 @@
 <template>
-  <div>22222</div>
+    <div class="container">222</div>
 </template>
 <script>
-
+export default {}
 </script>
 <style>
 </style>

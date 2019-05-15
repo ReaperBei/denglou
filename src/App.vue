@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+      <Topnav/>
+    <router-view></router-view>     <!--//挂载内容-->
+      <Footer/>
   </div>
 </template>
-
 <script>
+import Topnav from './components/one-About-us/MainNan/MainNan.vue' //导航
+import Footer from './components/one-About-us/Footer/footer.vue'  //底部
 export default {
-  name: 'App'
+  components: {
+    Topnav,
+    Footer
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

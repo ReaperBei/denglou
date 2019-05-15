@@ -3,13 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
-Vue.config.productionTip = false
-
+import ElementUi from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import './static/css/commonality.less'
 /* eslint-disable no-new */
-new Vue({
+Vue.use(ElementUi)
+let vm = new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>'
 })
+Vue.use(vm)
