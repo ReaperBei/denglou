@@ -14,8 +14,8 @@ import Sixz from '../components/six-Lactation-Division/index.vue'// 在线服务
 import Sort from '../components/one-About-us/Child/Sort.vue'
 import About from '../components/one-About-us/Child/About.vue'
 // 惠宇 子路由
-import Page from '../components/two-Child-parenting/five-home-page/index.vue'
-import Econmics from '../components/two-Child-parenting/four-home-economics/index.vue'
+import Page from '../components/two-Child-parenting/four-home-economics/index.vue'
+import Econmics from '../components/two-Child-parenting/five-home-page/index.vue'
 import Matron from '../components/two-Child-parenting/seven-Maternity-matron/index.vue'
 Vue.use(Router)
 
