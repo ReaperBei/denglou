@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="bodycol">
     <div class="banersix">
         <img src="~im/baomu_banner.jpg"/>
     </div>
     <div class="container">
       <el-row class="padding ks" :gutter="20">
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col class="background-colorw" :span="19"><div class="grid-content bg-purple">
           <div class="value_list">
             <h2 class="text-align-c margin-t-40 padding-20">育儿嫂价值</h2>
             <i class="title3"></i>
@@ -33,14 +33,9 @@
           </el-col>
         <!--侧边-->
         <el-col class="padding" :span="5"><div class="grid-content bg-purple">
-          <div class="fix">
-            <div class="text-align-c rightone">
-              <p class="rightone"><img src="~im/right_img.jpg"></p>
-              <p class="margin-t-30"><img src="~im/right_img2.jpg"></p>
-            </div>
-          </div>
+          <Cebians></Cebians>
         </div></el-col>
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col class="background-colorw" :span="19"><div class="grid-content bg-purple">
           <div data-v-0a878338="" class="value_list"><h2 data-v-0a878338="" class="text-align-c margin-t-40 padding-20">服务价格</h2> <i data-v-0a878338="" class="title3"></i></div>
           <div class="main-content text-align-c">
             <table>
@@ -111,7 +106,7 @@
           </div>
         </div>
         </el-col>
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col class="background-colorw" :span="19"><div class="grid-content bg-purple">
           <div data-v-0a878338="" class="value_list">
             <h2 data-v-0a878338="" class="text-align-c margin-t-40 padding-20">质量保证</h2>
             <i data-v-0a878338="" class="title3"></i>
@@ -143,7 +138,7 @@
           </div>
           </div>
         </el-col>
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col class="background-colorw margin-b-30" :span="19"><div class="grid-content bg-purple">
           <div data-v-0a878338="" class="value_list">
             <h2 data-v-0a878338="" class="text-align-c margin-t-40 padding-20">质量保证</h2>
             <i data-v-0a878338="" class="title3"></i>
@@ -152,8 +147,38 @@
             <li>
               <div>
                 <em>
-                  <img class="img-one" src="~im/baomu7.png"/>
                   <img class="img-two" src="~im/baomu7-w.png"/>
+                  <img class="img-one" src="~im/baomu7.png"/>
+                </em>
+                <p>家政顾问根据雇主要求拟定计划家政顾问根据雇主要求拟定计划</p>
+              </div>
+              <i class="flow-ico">I</i>
+            </li>
+            <li>
+              <div>
+                <em>
+                  <img class="img-two" src="~im/baomu7-w.png"/>
+                  <img class="img-one" src="~im/baomu7.png"/>
+                </em>
+                <p>家政顾问根据雇主要求拟定计划家政顾问根据雇主要求拟定计划</p>
+              </div>
+              <i class="flow-ico">I</i>
+            </li>
+            <li>
+              <div>
+                <em>
+                  <img class="img-two" src="~im/baomu7-w.png"/>
+                  <img class="img-one" src="~im/baomu7.png"/>
+                </em>
+                <p class="normal">在线预约</p>
+              </div>
+              <i class="flow-ico">I</i>
+            </li>
+            <li>
+              <div>
+                <em>
+                  <img class="img-two" src="~im/baomu7-w.png"/>
+                  <img class="img-one" src="~im/baomu7.png"/>
                 </em>
                 <p>在线预约</p>
               </div>
@@ -162,19 +187,8 @@
             <li>
               <div>
                 <em>
-                  <img class="img-one" src="~im/baomu7.png"/>
                   <img class="img-two" src="~im/baomu7-w.png"/>
-                </em>
-                <p>家政顾问根据
-                  雇主要求拟定计划</p>
-              </div>
-              <i class="flow-ico">I</i>
-            </li>
-            <li>
-              <div>
-                <em>
                   <img class="img-one" src="~im/baomu7.png"/>
-                  <img class="img-two" src="~im/baomu7-w.png"/>
                 </em>
                 <p>在线预约</p>
               </div>
@@ -183,8 +197,8 @@
             <li>
               <div>
                 <em>
-                  <img class="img-one" src="~im/baomu7.png"/>
                   <img class="img-two" src="~im/baomu7-w.png"/>
+                  <img class="img-one" src="~im/baomu7.png"/>
                 </em>
                 <p>在线预约</p>
               </div>
@@ -193,28 +207,8 @@
             <li>
               <div>
                 <em>
-                  <img class="img-one" src="~im/baomu7.png"/>
                   <img class="img-two" src="~im/baomu7-w.png"/>
-                </em>
-                <p>在线预约</p>
-              </div>
-              <i class="flow-ico">I</i>
-            </li>
-            <li>
-              <div>
-                <em>
                   <img class="img-one" src="~im/baomu7.png"/>
-                  <img class="img-two" src="~im/baomu7-w.png"/>
-                </em>
-                <p>在线预约</p>
-              </div>
-              <i class="flow-ico">I</i>
-            </li>
-            <li>
-              <div>
-                <em>
-                  <img class="img-one" src="~im/baomu7.png"/>
-                  <img class="img-two" src="~im/baomu7-w.png"/>
                 </em>
                 <p>在线预约</p>
               </div>
@@ -238,10 +232,17 @@
   </div>
 </template>
 <script>
+import Cebians from '../four-home-economics/cebian/index.vue'
 export default {
+  components: {
+    Cebians
+  }
 }
 </script>
 <style lang="less" scoped>
+  .bodycol{
+    background-color: #F0F0F0;
+  }
   .banersix img{
     width: 100%;
     height: 490px;
@@ -344,6 +345,20 @@ export default {
     }
   }
   /*流程*/
+  .flow-box li{
+    transition: 0.4s all;
+    -webkit-transition:0.4s all;
+    -moz-transition:0.4s all;
+    -ms-transition:0.4s all;
+    &:hover{
+      background: #cccccc;
+      border: 1px solid #cccccc;
+      transform:translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+    }
+  }
   .flow-box{
     /*overflow: hidden;*/
     text-align: center;
@@ -359,17 +374,20 @@ export default {
         height: 145px;
         margin: auto;
         padding-top: 25px;
-        background: #E1E1E1;
-        &:hover{
-          color: white;
-          background: #E95513;
-        }
+        background: #cccccc;
+        color: white;
         em{
           display: block;
           margin-bottom: 25px;
           img:first-child+img{
             display: none;
           }
+        }
+        p{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
         }
       }
       .flow-ico{
@@ -387,14 +405,13 @@ export default {
       }
     }
   }
-  .flow-box li div:hover+ .flow-ico{
-    background: #E95513;
-    color: white;
+  .flow-box li:hover div{
+    color: red;
   }
-  .flow-box li div:hover em .img-one{
+  .flow-box li:hover em .img-two{
     display: none;
   }
-  .flow-box li div:hover em .img-two{
+  .flow-box li:hover em .img-one{
     display: block;
     margin: auto;
   }
