@@ -1,6 +1,10 @@
 <template>
   <header class="container clearfix mainnan-header">
-    <div class="mainnan-logo"><img src="../../../static/images/index-logo.png" alt=""></div>
+    <div class="mainnan-logo">
+      <router-link to="/">
+        <img src="../../../static/images/index-logo.png" alt="">
+      </router-link>
+    </div>
     <ul class="mainnan container t-f-20 ">
       <li><router-link to="/">首页</router-link></li>
       <li>
@@ -12,6 +16,7 @@
       <li><router-link to="/six">保姆</router-link></li>
       <li><router-link to="/seven">城市合伙</router-link></li>
       <li><router-link to="/eight">个人中心</router-link></li>
+      <li><router-link to="/sixz">在线服务</router-link></li>
     </ul>
   </header>
 </template>

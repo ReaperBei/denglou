@@ -15,6 +15,9 @@ li {
 a {
   text-decoration: none;
 }
+.disp-block {
+  display: inline-block;
+}
 //左右浮动
 .fl {
   float: left;
@@ -24,6 +27,11 @@ a {
 }
 //清除浮动
 .clearfix {
+  clear: both;
+}
+.clearfix:after {
+  content: ' ';
+  display: block;
   clear: both;
 }
 //字体颜色

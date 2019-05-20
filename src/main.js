@@ -5,8 +5,8 @@ import App from './App'
 import router from './router'
 import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import './static/css/commonality.less'
-import './static/css/icon.less'
+import './static/css/commonality.less'// 公共样式
+import './static/css/icon.less'// 精灵图
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */

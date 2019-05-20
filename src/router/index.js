@@ -1,13 +1,22 @@
 import Vue from 'vue'
+// 路由
 import Router from 'vue-router'
-import one from '../components/one-About-us/index.vue'
-import two from '../components/two-Child-parenting/index.vue'
-import three from '../components/three-Contact-us/index.vue'
-import four from '../components/four-home-economics/index.vue'
-import five from '../components/five-home-page/index.vue'
-import six from '../components/seven-Maternity-matron/index.vue'
-import seven from '../components/Eight-Nanny/index.vue'
-import eight from '../components/nine-Safety-guarantee/index.vue'
+import one from '../components/one-About-us/index.vue'// 首页
+import two from '../components/two-Child-parenting/index.vue'// 家政
+import three from '../components/three-Contact-us/index.vue'// 月嫂
+import four from '../components/four-home-economics/index.vue'// 催乳师
+import five from '../components/five-home-page/index.vue'// 育儿嫂
+import six from '../components/seven-Maternity-matron/index.vue'// 保姆
+import seven from '../components/Eight-Nanny/index.vue'// 城市合伙
+import eight from '../components/nine-Safety-guarantee/index.vue'// 个人中心
+import Sixz from '../components/six-Lactation-Division/index.vue'// 在线服务
+// 首页子路由
+import Sort from '../components/one-About-us/Child/Sort.vue'
+import About from '../components/one-About-us/Child/About.vue'
+// 惠宇 子路由
+import Page from '../components/two-Child-parenting/five-home-page/index.vue'
+import Econmics from '../components/two-Child-parenting/four-home-economics/index.vue'
+import Matron from '../components/two-Child-parenting/seven-Maternity-matron/index.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -51,6 +60,36 @@ export default new Router({
     path: '/eight',
     components: {
       default: eight
+    }
+  }, {
+    path: '/sixz',
+    components: {
+      default: Sixz
+    }
+  }, {
+    path: '/one/sort',
+    components: {
+      default: Sort
+    }
+  }, {
+    path: '/one/about',
+    components: {
+      default: About
+    }
+  }, {
+    path: '/two/page',
+    components: {
+      default: Page
+    }
+  }, {
+    path: '/two/econmics',
+    components: {
+      default: Econmics
+    }
+  }, {
+    path: '/three/matron',
+    components: {
+      default: Matron
     }
   }]
 })

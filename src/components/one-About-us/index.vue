@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import Content from './Content/content.vue'
+import Content from './Content/index.vue'
 export default {
   components: {
     Content
