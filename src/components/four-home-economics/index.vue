@@ -538,7 +538,7 @@ export default {
     }
   }
   .main-content .li1 a:hover + P{
-    color: red;
+    color: #E95513;
     font-weight: 600;
   }
   .main-content{
