@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="content-t">
+    <div class="background-colorw content-t">
       <div class="content-t-d">
         <img src="../../../static/images/index-erweima.jpg" alt="">
       </div>
     </div>
-    <div class="container clearfix">
-      <div class="text-align-c t-f-40">家政服务</div>
-      <div class="text-align-c t-f-18 margin-t-20">全方位的服务 让您生活无忧</div>
+    <div class="background-colorw container positop clearfix">
+      <div class="text-align-c t-f-40 f-weight-600">家政服务</div>
+      <div class="text-align-c t-f-24 margin-t-20">全方位的服务 让您生活无忧</div>
       <div class="container-3 margin-t-10"><img src="../../../static/images/index-bg.png" alt=""></div>
       <ul class="container-ul4 margin-t-30 clearfix">
-          <li>
+          <li class="shades">
               <i class="container-ul4-i"></i>
               <div class="t-f-20 hsff-7124">日常保洁</div>
               <div class="t-f-16 margin-t-5">钟点工/小时工/清洁护理</div>
@@ -18,7 +18,7 @@
                 <span class="icon-c-v icon-c-v1 margin-t-5 cursor"></span>
               </div>
           </li>
-          <li>
+          <li class="shades">
             <i class="container-ul4-i"></i>
             <div class="t-f-20 hsff-7124">日常保洁</div>
             <div class="t-f-16 margin-t-5">钟点工/小时工/清洁护理</div>
@@ -26,7 +26,7 @@
               <span class="icon-c-v icon-c-v1 margin-t-5 cursor"></span>
             </div>
           </li>
-        <li>
+        <li class="shades">
           <i class="container-ul4-i"></i>
           <div class="t-f-20 hsff-7124">日常保洁</div>
           <div class="t-f-16 margin-t-5">钟点工/小时工/清洁护理</div>
@@ -36,9 +36,9 @@
         </li>
       </ul>
     </div>
-    <div class="container text-align-c">
-        <div class="t-f-40">我们的优势</div>
-        <div class="margin-t-20">实名认证 专业培训 家政保险 装备规范 价格透明 评价反馈</div>
+    <div class="background-colorw container text-align-c">
+        <div class="t-f-40 f-weight-600">我们的优势</div>
+        <div class="margin-t-20 t-f-24">实名认证 专业培训 家政保险 装备规范 价格透明 评价反馈</div>
         <div class="container-3 margin-t-10"><img src="../../../static/images/index-bg.png" alt=""></div>
         <ul class="container-ul5 margin-t-50 clearfix">
             <li class="container-ul5-li1 text-align-c">
@@ -70,6 +70,10 @@ export default {}
 </script>
 <style lang="less" scoped>
   @import "../../../static/css/commonality";
+  /*改变家政服务的高度*/
+  .positop{
+    margin-top: -70px;
+  }
   .content-t{
     position: relative;
     top: -100px;
@@ -97,7 +101,21 @@ export default {}
     float: left;
     width: 200px;
     padding: 0 0 0 50px;
-    margin: 0 30px;
+    margin: 0 70px;
+    background: url("~im/home-working-bg1.png") no-repeat center;
+    box-shadow: 0px 0px 5px #A9A9A9;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+    &:hover{
+      transform: translateX(10px);
+      -webkit-transform: translateX(10px);
+      -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+      -o-transform: translateX(10px);
+    }
   }
   .container-ul4-i{
     display: block;

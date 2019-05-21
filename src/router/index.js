@@ -72,7 +72,7 @@ export default new Router({
     components: {
       default: onminty
     }
-  },{
+  }, {
     path: '/one/sort',
     components: {
       default: Sort
