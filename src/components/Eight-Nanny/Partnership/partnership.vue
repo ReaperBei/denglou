@@ -64,7 +64,6 @@ export default {}
     height: 570px;
   }
   .partnership-div2-3{
-    background: url("../../../static/images/eight-2.jpg");
     padding: 0 10px 0 10px;
   }
   .partnership-div2-2 {

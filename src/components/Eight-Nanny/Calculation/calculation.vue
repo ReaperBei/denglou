@@ -253,17 +253,18 @@ export default {}
     top: 75px;
     border: 1px solid darkgrey;
     height: 168px;
-    width: 312px;
+    width: 307px;
   }
   .calculation-div2-ul li{
     float: left;
     text-align: center;
     height: 138px;
     border-right: 1px solid darkgrey;
+    margin-right: -1px;
   }
   .calculation-div2-ul li div{
     border-bottom: 1px solid darkgrey;
-    padding: 5px 0 5px 0 ;
+    padding: 9.8px 0 0 0;
   }
   .calculation-div3 {
     height: 350px;

@@ -7,16 +7,15 @@
     </div>
     <ul class="mainnan container t-f-20 ">
       <li><router-link to="/">首页</router-link></li>
-      <li>
-        <router-link to="/two">家政</router-link>
-      </li>
+      <li><router-link to="/two">家政</router-link></li>
       <li><router-link to="/three">月嫂</router-link></li>
       <li><router-link to="/four">催乳师</router-link></li>
       <li><router-link to="/five">育儿嫂</router-link></li>
       <li><router-link to="/six">保姆</router-link></li>
       <li><router-link to="/seven">城市合伙</router-link></li>
       <li><router-link to="/eight">个人中心</router-link></li>
-      <li><router-link to="/sixz">在线服务</router-link></li>
+      <li><router-link to="/sixz">注册</router-link></li>
+      <li><router-link to="/onminty">登录</router-link></li>
     </ul>
   </header>
 </template>

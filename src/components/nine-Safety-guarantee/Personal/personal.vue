@@ -19,7 +19,7 @@
           <div class="grid-content bg-purple">
             <div class="clearfix margin-t-50 margin-l-30">
               <div class="user-to-1-tx fl">
-                <img class="personal-tx" src="../../../static/images/ga1.jpg" alt="">
+                <img class="personal-tx" src="../../../static/images/ga1.jpg" style="width: 150px" height="150px">
                 <a class="修改头像"></a>
               </div>
               <div class="fl">
@@ -106,10 +106,10 @@
                 </div>
             </div>
           </el-tab-pane>
-          <el-tab-pane label="我的优惠券" name="second">
+          <el-tab-pane label="预约/订单" name="third">
             <div>2</div>
           </el-tab-pane>
-          <el-tab-pane label="预约/订单" name="third">
+          <el-tab-pane label="我的优惠券" name="second">
             <div>3</div>
           </el-tab-pane>
           <el-tab-pane label="家政服务" name="fourth2">
@@ -153,6 +153,7 @@ export default {
   .user-to-2 {
     position: relative;
     top: 25px;
+    padding: 0 75px;
   }
   .user-to-2 img{
     width: 50px;

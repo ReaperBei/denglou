@@ -58,7 +58,9 @@
           <li class="list3 fl">
             <div class="bg">
               <i></i>
-              <a href="#"><h6>大扫除</h6></a>
+              <h6>
+              <router-link to="/two/Division">大扫除</router-link>
+              </h6>
               <a href="#"><p>
                 清除顽洉  适用长期未住、未彻底清洁房屋</p></a>
               <a href="#" class="url uli"></a>
