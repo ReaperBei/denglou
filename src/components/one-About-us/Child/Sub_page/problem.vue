@@ -91,12 +91,12 @@
   </div>
 </template>
 <script>
-  import Rightsidebar from './Rightsidebar/Rightsidebar.vue'
-  export default {
-    components: {
-      Rightsidebar
-    }
+import Rightsidebar from './Rightsidebar/Rightsidebar.vue'
+export default {
+  components: {
+    Rightsidebar
   }
+}
 </script>
 <style>
   .width-55{

@@ -5,9 +5,9 @@
     </div>
     <div class="container">
       <el-row class="padding ks" :gutter="20">
-        <el-col class="background-colorw" :span="19"><div class="grid-content bg-purple">
+        <el-col class="background-colorw margin-t-30" :span="19"><div class="grid-content bg-purple">
           <div class="value_list">
-            <h2 class="text-align-c margin-t-40 padding-20">育儿嫂价值</h2>
+            <h2 class="text-align-c padding-20">育儿嫂价值</h2>
             <i class="title3"></i>
           </div>
           <div class="margin-t-20">
@@ -18,14 +18,16 @@
               <li><p>保洁+照顾老人</p><span>单休/双休</span></li>
             </ul>
             <b class="schedule fl"></b>
-            <img class="fl" src="~im/baomu1.png"/>
-            <b class="schedule fl"></b>
-            <ul class="baomu baomuone">
-              <li>非住家保姆</li>
-              <li><p>保洁+做饭</p><span>单休/双休</span></li>
-              <li><p>保洁+带小孩</p><span>单休/双休</span></li>
-              <li><p>保洁+照顾老人</p><span>单休/双休</span></li>
-            </ul>
+            <img class="fl anim_shake_image" src="~im/baomu1.png"/>
+            <div class="fr baomu-box">
+              <b class="schedule fl"></b>
+              <ul class="baomu baomuone">
+                <li>非住家保姆</li>
+                <li><p>保洁+做饭</p><span>单休/双休</span></li>
+                <li><p>保洁+带小孩</p><span>单休/双休</span></li>
+                <li><p>保洁+照顾老人</p><span>单休/双休</span></li>
+              </ul>
+            </div>
             <div>
             </div>
           </div>
@@ -232,7 +234,7 @@
   </div>
 </template>
 <script>
-import Cebians from '../four-home-economics/cebian/index.vue'
+import Cebians from '../five-home-page/comcebian/index'
 export default {
   components: {
     Cebians
@@ -276,6 +278,9 @@ export default {
     height: 268px;
     background: url("~im/baomu2.png") no-repeat center;
     margin-top: 20px;
+  }
+  .baomu-box{
+    margin-right: 221px;
   }
   .baomuone{
     margin-left: 0px !important;
@@ -351,7 +356,6 @@ export default {
     -moz-transition:0.4s all;
     -ms-transition:0.4s all;
     &:hover{
-      background: #cccccc;
       border: 1px solid #cccccc;
       transform:translateY(-10px);
       -webkit-transform: translateY(-10px);
@@ -406,6 +410,9 @@ export default {
     }
   }
   .flow-box li:hover div{
+    color: red;
+  }
+  .flow-box li:hover i{
     color: red;
   }
   .flow-box li:hover em .img-two{
