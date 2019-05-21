@@ -4,6 +4,30 @@
       <div class="content-t-d">
         <img src="../../../static/images/index-erweima.jpg" alt="">
       </div>
+      <div class="mainnan-dq">
+        <div>
+          <img src="../../../static/images/one-bj.png" alt="">
+          <span class="mainnan-dq-sz">苏州市</span>
+        </div>
+        <div class="mainnan-dq-s">
+          <p>请选择城市</p>
+          <ul class="mainnan-dq-s-ul">
+            <li><a href="">北京市</a></li>
+            <li><a href="">上海市</a></li>
+            <li><a href="">深圳市</a></li>
+            <li><a href="">南京市</a></li>
+            <li><a href="">杭州市</a></li>
+            <li><a href="">长沙市</a></li>
+            <li><a href="">沈阳市</a></li>
+            <li><a href="">合肥市</a></li>
+            <li><a href="">哈尔滨市</a></li>
+            <li><a href="">苏州市</a></li>
+            <li><a href="">无锡市</a></li>
+            <li><a href="">常州市</a></li>
+            <li><a href="">青岛市</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="container clearfix">
       <div class="text-align-c t-f-40">家政服务</div>
@@ -141,5 +165,42 @@ export default {}
       }
     }
   }
-
+  .mainnan-dq {
+    position: relative;
+    margin-left: 100px;
+    margin-top: -100px;
+  }
+  .mainnan-dq img{
+    width: 20px;
+    height: 20px;
+  }
+  .mainnan-dq {
+    width: 100px;
+    height: 50px;
+    .mainnan-dq-s{
+      display: none;
+    }
+    &:hover {
+      .mainnan-dq-s {
+        animation: all 2s;
+        display: block;
+      }
+    }
+  }
+  .mainnan-dq-s {
+    margin-left: 70px;
+    width: 300px;
+    background: white;
+    padding: 10px 10px;
+  }
+  .mainnan-dq-s-ul {
+    width: 350px;
+    height: 100px;
+    background: white;
+  }
+  .mainnan-dq-s-ul li{
+    float: left;
+    margin: 5px 5px 0 10px;
+    width: 20%;
+  }
 </style>
