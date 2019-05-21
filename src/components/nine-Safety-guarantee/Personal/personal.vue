@@ -106,7 +106,7 @@
                 </div>
             </div>
           </el-tab-pane>
-          <el-tab-pane label="预约/订单" name="third">
+          <el-tab-pane label="订单/预约" name="third">
             <div>2</div>
           </el-tab-pane>
           <el-tab-pane label="我的优惠券" name="second">
