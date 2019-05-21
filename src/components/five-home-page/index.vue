@@ -5,7 +5,7 @@
       </div>
     <div class="container">
       <el-row class="padding ks" :gutter="20">
-        <el-col :span="19" class="background-colorw"><div class="grid-content bg-purple">
+        <el-col :span="19" class="background-colorw margin-t-30"><div class="grid-content bg-purple">
             <div class="value_list">
               <h2>育儿嫂价值</h2>
             </div>
@@ -72,7 +72,7 @@
           </div>
           <div class="content_list clearfix">
              <div class="fl">
-               <img src="~im/girl.jpg">
+               <img class="anim_fade_image" src="~im/girl.jpg">
              </div>
             <ul class="fr banef-ul">
               <li>
@@ -252,7 +252,7 @@
   </div>
 </template>
 <script>
-import Cebians from '../four-home-economics/cebian/index.vue'
+import Cebians from './comcebian/index.vue'
 export default {
   components: {
     Cebians
@@ -269,7 +269,7 @@ export default {
   }
   .value_list{
     text-align: center;
-    margin: 40px auto 40px;
+    margin: 20px auto 40px;
     background: url("~im/yuer_bg.jpg") no-repeat center;
     width: 950px;
     height: 45px;
@@ -290,6 +290,20 @@ export default {
     float: left;
     margin-left: 50px;
     background: url("~im/yuer_bg_cont.png");
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+    &:hover{
+      background: #E95513;
+      color: #fff;
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+    }
   }
   .write p{
     font-size: 12px;
@@ -304,7 +318,7 @@ export default {
     width: 80%;
     margin: auto;
   }
-  /*cebian*/
+  /*comcebian*/
   .rightone{
     display: block;
     padding: 33px 0 20px;
@@ -339,6 +353,19 @@ export default {
   .product_list ul li{
     float: left;
     margin-left: 50px;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+    &:hover{
+      box-shadow: 5px 5px 0.5px #E95513;
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+    }
   }
   .product_list ul li em{
     display: block;

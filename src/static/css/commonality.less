@@ -34,6 +34,41 @@ a {
   display: block;
   clear: both;
 }
+//左右移动
+.anim_fade_image{
+  position:absolute;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(10px) rotate(10deg);
+  }
+  75% {
+    -webkit-transform: translateX(-10px) rotate(-10deg);
+  }
+}
+//图片渐入渐出
+.anim_shake_image{
+  position:absolute;
+  -webkit-animation-name: fadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+}
 //字体颜色
 .red-ff {
   color: @red-ff2d;
