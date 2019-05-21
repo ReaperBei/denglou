@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bodycol">
     <div class="banner-four">
     <img src="~im/cuiru-banner.jpg">
     </div>
@@ -9,20 +9,16 @@
         <span class="ban-ic"></span>
       </div>
     <div class="container clearfix">
-    <el-row :gutter="20">
-      <el-col class="margin-b-50" :span="18"><div class="grid-content bg-purple">
+    <el-row :gutter="20" class="margin-t-40">
+      <el-col class="margin-b-50 background-colorw" :span="18"><div class="grid-content bg-purple">
         <div class="content-box">
           <h2 class="text-align-c hr">
             <span>服务内容</span>
           </h2>
-          <p class="content-but">
-            <a href="javascript:void(0)" data-herf='1' class="bt-on bt-cont">母乳哺育</a>
-            <a href="javascript:void(0)" data-herf='2' class="bt-cont">乳腺护理</a>
-          </p>
         </div>
         <!--element切换-->
         <el-tabs v-model="activeName" @tab-click="handleClick">
-          <el-tab-pane label="用户管理" name="first">
+          <el-tab-pane label="母乳哺育" name="first">
             <ul class="clearfix" name="nav" data-herf='1'>
               <li class="one">
                 <div class="ul-boxContent">
@@ -76,7 +72,7 @@
               </li>
             </ul>
           </el-tab-pane>
-          <el-tab-pane label="配置管理" name="second">
+          <el-tab-pane label="乳腺护理" name="second">
             <!--影藏-->
             <ul class="clearfix ul-two" name="nav" data-herf='2'>
               <li class="one">
@@ -135,14 +131,9 @@
       </div></el-col>
       <!--侧边导航-->
       <el-col :span="5"><div class="grid-content bg-purple">
-        <div class="fix">
-          <div class="text-align-c rightone">
-            <p class="rightone"><img src="~im/right_img.jpg"></p>
-            <p class="margin-t-30"><img src="~im/right_img2.jpg"></p>
-          </div>
-        </div>
+        <Cebiian></Cebiian>
       </div></el-col>
-      <el-col class="margin-b-50" :span="18"><div class="grid-content bg-purple">
+      <el-col class="background-colorw" :span="18"><div class="grid-content bg-purple margin-b-50">
         <div class="content-box">
           <h2 class="text-align-c hr">
             <span>服务价格</span>
@@ -232,7 +223,7 @@
               </table>
             </table>
     </div></el-col>
-      <el-col class="margin-b-50 margin-t-40" :span="18"><div class="grid-content bg-purple">
+      <el-col class="margin-t-40 background-colorw" :span="18"><div class="grid-content bg-purple margin-b-50">
         <div class="content-box">
           <h2 class="text-align-c hr">
             <span>服务价格</span>
@@ -245,24 +236,28 @@
           </li>
           <li class="li1">
             <a href="javascript:void(0)"></a>
-            <p>在线预约</p>
+            <p>体验服务</p>
           </li>
           <li class="li1">
             <a href="javascript:void(0)"></a>
-            <p>在线预约</p>
+            <p>定制套餐</p>
           </li>
           <li class="li1">
             <a href="javascript:void(0)"></a>
-            <p>在线预约</p>
+            <p>平台派单</p>
           </li>
           <li class="li1">
             <a href="javascript:void(0)"></a>
-            <p>在线预约</p>
+            <p>完成服务</p>
+          </li>
+          <li class="li1">
+            <a href="javascript:void(0)"></a>
+            <p>客户回访</p>
           </li>
         </ul>
       </div></el-col>
       <!--底部-->
-      <el-col class="margin-b-50 margin-t-40" :span="18"><div class="grid-content bg-purple">
+      <el-col class="margin-b-30 margin-t-40 background-colorw" :span="18"><div class="grid-content bg-purple">
         <div class="content-box">
           <h2 class="text-align-c hr">
             <span>催乳师风采</span>
@@ -330,15 +325,22 @@
   </div>
 </template>
 <script>
+import Cebiian from './cebian/index.vue'
 export default {
   data () {
     return {
       activeName: 'first'
     }
+  },
+  components: {
+    Cebiian
   }
 }
 </script>
 <style lang="less" scoped>
+  .bodycol{
+    background-color: #F0F0F0;
+  }
   .banner-four{
     width: 100%;
     height: 490px;
@@ -350,6 +352,7 @@ export default {
   .question{
     padding: 30px 0 50px 80px;
     line-height: 35px;
+    background: #fff;
     .ban-ic{
       display: block;
       position: absolute;
@@ -376,6 +379,9 @@ export default {
   .content-but a{
 
   }
+  .content-box{
+    margin: 40px 50px;
+  }
  .content-box p a{
    display: inline-block;
    width: 103px;
@@ -383,7 +389,6 @@ export default {
    line-height: 33px;
    font-size: 16px;
    color: #666;
-   margin-bottom: 50px;
  }
   .content-box p a.bt-on{
     background-color: #E95513;
@@ -401,6 +406,20 @@ export default {
    ul div{
      position: absolute;
    }
+   /*elelment服务内容的data样式*/
+  /deep/.el-tabs__nav-scroll {
+    overflow: hidden;
+    margin-left: 370px;
+   }
+  /deep/.el-tabs__item.is-active {
+    color: #E95513;
+    /deep/&:hover{
+      color: #E95513;
+    }
+  }
+  /deep/.el-tabs__active-bar{
+    background-color: #E95513;
+  }
   .ul-boxContent{
     width: 240px;
     height: 208px;
@@ -503,16 +522,20 @@ export default {
       border-top: 2px solid #E95513;
     }
   }
-  ul .li1 a{
+  .main-content li{
+    text-align: center;
+    float: left;
+    margin-left: 43px;
+  }
+  .main-content .li1 a{
     display: block;
     width: 100px;
     height: 100px;
     background-image: url("~im/cuiru-liu.png");
     margin-bottom: 23px;
-  }
-  ul .li1{
-    float: left;
-    margin-left: 65px;
+    &:hover{
+      background-position: 0px 100px;
+    }
   }
   .main-content{
     background: url("~im/cuiru2.png") no-repeat center bottom;

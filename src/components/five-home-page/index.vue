@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="bodycol">
       <div class="banner-five">
         <img src="~im/banner5.jpg">
       </div>
     <div class="container">
       <el-row class="padding ks" :gutter="20">
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col :span="19" class="background-colorw"><div class="grid-content bg-purple">
             <div class="value_list">
               <h2>育儿嫂价值</h2>
             </div>
@@ -64,14 +64,9 @@
         </div></el-col>
         <!--侧边-->
         <el-col class="padding" :span="5"><div class="grid-content bg-purple">
-          <div class="fix">
-            <div class="text-align-c rightone">
-              <p class="rightone"><img src="~im/right_img.jpg"></p>
-              <p class="margin-t-30"><img src="~im/right_img2.jpg"></p>
-            </div>
-          </div>
+          <Cebians></Cebians>
         </div></el-col>
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col :span="19" class="background-colorw"><div class="grid-content bg-purple">
           <div class="value_list">
             <h2>服务内容</h2>
           </div>
@@ -115,7 +110,7 @@
             </ul>
           </div>
         </div></el-col>
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col :span="19" class="background-colorw"><div class="grid-content bg-purple">
           <div class="value_list">
             <h2>服务价格</h2>
           </div>
@@ -191,7 +186,7 @@
           </div>
         </div></el-col>
         <!--品质保障-->
-        <el-col :span="19"><div class="grid-content bg-purple">
+        <el-col :span="19" class="background-colorw margin-b-30"><div class="grid-content bg-purple">
           <div class="value_list">
             <h2>品质保障</h2>
           </div>
@@ -257,9 +252,17 @@
   </div>
 </template>
 <script>
-export default {}
+import Cebians from '../four-home-economics/cebian/index.vue'
+export default {
+  components: {
+    Cebians
+  }
+}
 </script>
 <style lang="less" scoped>
+  .bodycol{
+    background-color: #F0F0F0;
+  }
   .banner-five img{
     width: 100%;
     height: 490px;
