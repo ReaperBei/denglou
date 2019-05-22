@@ -34,7 +34,7 @@
         <!--右侧-->
       <div class="el-copy">
         <ul>
-          <li class="list1 fl">
+          <li class="list1 shades fl">
             <div class="bg">
               <i></i>
               <h6>
@@ -45,7 +45,7 @@
               <a href="#" class="url uli"></a>
             </div>
           </li>
-          <li class="list2 fr">
+          <li class="list2 shades fr">
             <div class="bg">
               <i></i>
               <h6>
@@ -55,7 +55,7 @@
               <a href="#" class="url uli"></a>
             </div>
           </li>
-          <li class="list3 fl">
+          <li class="list3 shades fl">
             <div class="bg">
               <i></i>
               <h6>
@@ -66,7 +66,7 @@
               <a href="#" class="url uli"></a>
             </div>
           </li>
-          <li class="list4 fr">
+          <li class="list4 shades fr">
             <div class="bg">
               <i></i>
               <a href="#"><h6>家电清洗</h6></a>
@@ -74,7 +74,7 @@
               <a href="#" class="url uli"></a>
             </div>
           </li>
-          <li class="list5 fl">
+          <li class="list5 shades fl">
             <div class="bg">
               <i></i>
               <a href="#"><h6>擦玻璃</h6></a>
@@ -83,7 +83,7 @@
               <a href="#" class="url uli"></a>
             </div>
           </li>
-          <li class="list6 fr">
+          <li class="list6 shades fr">
             <div class="bg">
               <i></i>
               <a href="#"><h6>搬家</h6></a>
@@ -139,7 +139,7 @@ export default {
 .commeny{
   background-color: #F0F0F0;
   margin-bottom: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .menu{
   max-width: 1200px;
@@ -193,7 +193,7 @@ export default {
   background-color: #fff;
   float: right;
   position: relative;
-  padding: 70px 0;
+  padding: 20px 0;
 }
 .el-copy ul {
   overflow: hidden;
@@ -221,9 +221,11 @@ export default {
 .el-copy li{
   width: 365px;
   padding-left: 35px;
+  margin-top: 10px;
   position: relative;
+  background-color: #f2f2f2;
   &:hover{
-    background-color: #f2f2f2;
+      box-shadow: 0px 0px 10px #9A9A9A;
   }
 }
 .bg{

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bakgcol">
     <!--大图 家政服务 我们的优势-->
       <Content/>
     <!--分类 十大工种-->
@@ -20,5 +20,9 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="less" scoped>
+  /*主题的背景颜色*/
+  .bakgcol{
+    background-color: #f6f6f6;
+  }
 </style>
