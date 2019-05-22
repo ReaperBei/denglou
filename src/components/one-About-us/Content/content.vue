@@ -243,7 +243,7 @@ export default {}
   }
   .mainnan-dq-s {
     margin-left: 70px;
-    width: 300px;
+    width: 360px;
     background: white;
     padding: 10px 10px;
   }
