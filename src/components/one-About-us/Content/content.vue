@@ -200,7 +200,7 @@ export default {}
   }
   .mainnan-dq-s-ul li{
     float: left;
-    margin: 5px 5px 0 10px;
+    margin: 5px 5px 0 11px;
     width: 20%;
   }
 </style>
