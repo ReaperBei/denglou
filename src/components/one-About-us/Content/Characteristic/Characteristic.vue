@@ -54,7 +54,7 @@
         </ul>
         <a class="btn characteristic-btn margin-t-50 margin-b-50">More</a>
     </div>
-    <div class="margin-b-30">
+    <div class="margin-b-30 characteristic-eeeee">
         <div class="text-align-c">
           <div class="t-f-40 f-weight-600">行业资讯</div>
           <div class="margin-t-20 t-f-24">让您随时随地了解e家政</div>
@@ -65,7 +65,7 @@
         <ul class="characteristic-u3 clearfix margin-t-50">
             <li>
               <img class="wh" src="../../../../static/images/one-char-tp1.jpg" alt="">
-              <div class="margin-t-10">
+              <div class="margin-t-20">
                 <span class="t-f-22 margin-l-10 f-weight-600 fl">行业新闻</span>
                 <span class="fr btn characteristic-btn-2 chara-ul-li-s">More</span>
               </div>
@@ -75,30 +75,30 @@
                 <li>应该如何和保姆融洽相处</li>
               </ul>
             </li>
-          <li class="">
-            <img class="wh" src="../../../../static/images/one-char-tp1.jpg" alt="">
-            <div class="margin-t-10">
-              <span class="t-f-22 margin-l-10 f-weight-600 fl">行业新闻</span>
-              <span class="fr btn characteristic-btn-2 chara-ul-li-s">More</span>
-            </div>
-            <ul class="characteristic-u3-1 margin-t-50">
-              <li>“贴心”保姆感动雇主</li>
-              <li>保姆与雇主能否成为“一家人”</li>
-              <li>应该如何和保姆融洽相处</li>
-            </ul>
-          </li>
-          <li>
-            <img class="wh" src="../../../../static/images/one-char-tp1.jpg" alt="">
-            <div class="margin-t-10">
-              <span class="t-f-22 margin-l-10 f-weight-600 fl">行业新闻</span>
-              <span class="fr btn characteristic-btn-2 chara-ul-li-s">More</span>
-            </div>
-            <ul class="characteristic-u3-1 margin-t-50">
-              <li>“贴心”保姆感动雇主</li>
-              <li>保姆与雇主能否成为“一家人”</li>
-              <li>应该如何和保姆融洽相处</li>
-            </ul>
-          </li>
+            <li class="">
+              <img class="wh" src="../../../../static/images/one-char-tp1.jpg" alt="">
+              <div class="margin-t-20">
+                <span class="t-f-22 margin-l-10 f-weight-600 fl ">行业新闻</span>
+                <span class="fr btn characteristic-btn-2 chara-ul-li-s">More</span>
+              </div>
+              <ul class="characteristic-u3-1 margin-t-50">
+                <li>“贴心”保姆感动雇主</li>
+                <li>保姆与雇主能否成为“一家人”</li>
+                <li>应该如何和保姆融洽相处</li>
+              </ul>
+            </li>
+            <li>
+              <img class="wh" src="../../../../static/images/one-char-tp1.jpg" alt="">
+              <div class="margin-t-20">
+                <span class="t-f-22 margin-l-10 f-weight-600 fl">行业新闻</span>
+                <span class="fr btn characteristic-btn-2 chara-ul-li-s">More</span>
+              </div>
+              <ul class="characteristic-u3-1 margin-t-50">
+                <li>“贴心”保姆感动雇主</li>
+                <li>保姆与雇主能否成为“一家人”</li>
+                <li>应该如何和保姆融洽相处</li>
+              </ul>
+            </li>
         </ul>
     </div>
   </div>
@@ -166,7 +166,7 @@ export default {}
     display: flex;
   }
   .characteristic-u3>li{
-    width: 25%;
+    width: 32%;
     float: left;
     margin: 0px 53px 0px 0px;
     border:15px solid #f6f6f6;
@@ -187,6 +187,7 @@ export default {}
   }
   .characteristic-u3-1{
     width: 100%;
+    margin-top: 60px;
   }
   .characteristic-u3-1 li{
       &:hover{
@@ -205,5 +206,8 @@ export default {}
   .chara-ul-li-s {
     position: relative;
     right: 17px;
+  }
+  .characteristic-eeeee {
+    height: 750px;
   }
 </style>

@@ -58,6 +58,22 @@
             <span class="icon-c-v icon-c-v1 margin-t-5 cursor"></span>
           </div>
         </li>
+        <li class="shades">
+          <i class="container-ul4-i"></i>
+          <div class="t-f-20 hsff-7124">日常保洁</div>
+          <div class="t-f-16 margin-t-5">钟点工/小时工/清洁护理</div>
+          <div>
+            <span class="icon-c-v icon-c-v1 margin-t-5 cursor"></span>
+          </div>
+        </li>
+        <li class="shades">
+          <i class="container-ul4-i"></i>
+          <div class="t-f-20 hsff-7124">日常保洁</div>
+          <div class="t-f-16 margin-t-5">钟点工/小时工/清洁护理</div>
+          <div>
+            <span class="icon-c-v icon-c-v1 margin-t-5 cursor"></span>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="background-colorw container text-align-c">
@@ -75,16 +91,36 @@
                 <div class="container-ul5-li1-d2"><img src="../../../static/images/one-3-1-2.png" alt=""></div>
               </div>
             </li>
-          <li class="container-ul5-li2 text-align-c">
-            <div class="container-ul5-li1-d1">
-              <div class="disp-block"><img src="../../../static/images/one-3-1-1.png" alt=""></div>
-              <div class="margin-t-20 t-f-26">家政保险</div>
-              <div class="margin-t-10">Domestic insurance</div>
-              <p>提供人身保险及用户物品保障</p>
-              <p>人身意外险、让服务全程无忧</p>
-              <div class="container-ul5-li1-d2"><img src="../../../static/images/one-3-1-2.png" alt=""></div>
-            </div>
-          </li>
+            <li class="container-ul5-li2 text-align-c">
+              <div class="container-ul5-li1-d1">
+                <div class="disp-block"><img src="../../../static/images/one-3-1-1.png" alt=""></div>
+                <div class="margin-t-20 t-f-26">家政保险</div>
+                <div class="margin-t-10">Domestic insurance</div>
+                <p>提供人身保险及用户物品保障</p>
+                <p>人身意外险、让服务全程无忧</p>
+                <div class="container-ul5-li1-d2"><img src="../../../static/images/one-3-1-2.png" alt=""></div>
+              </div>
+            </li>
+            <li class="container-ul5-li2 text-align-c">
+              <div class="container-ul5-li1-d1">
+                <div class="disp-block"><img src="../../../static/images/one-3-1-1.png" alt=""></div>
+                <div class="margin-t-20 t-f-26">家政保险</div>
+                <div class="margin-t-10">Domestic insurance</div>
+                <p>提供人身保险及用户物品保障</p>
+                <p>人身意外险、让服务全程无忧</p>
+                <div class="container-ul5-li1-d2"><img src="../../../static/images/one-3-1-2.png" alt=""></div>
+              </div>
+            </li>
+            <li class="container-ul5-li1 text-align-c">
+              <div class="container-ul5-li1-d1">
+                <div class="disp-block"><img src="../../../static/images/one-3-1-1.png" alt=""></div>
+                <div class="margin-t-20 t-f-26">家政保险</div>
+                <div class="margin-t-10">Domestic insurance</div>
+                <p>提供人身保险及用户物品保障</p>
+                <p>人身意外险、让服务全程无忧</p>
+                <div class="container-ul5-li1-d2"><img src="../../../static/images/one-3-1-2.png" alt=""></div>
+              </div>
+            </li>
         </ul>
     </div>
   </div>
@@ -124,8 +160,8 @@ export default {}
   .container-ul4 li{
     float: left;
     width: 200px;
-    padding: 0 0 0 50px;
-    margin: 0 70px;
+    padding: 0 0 0 30px;
+    margin: 0 20px;
     background: url("~im/home-working-bg1.png") no-repeat center;
     box-shadow: 0px 0px 5px #A9A9A9;
     -webkit-transition: 0.4s all;
@@ -159,10 +195,10 @@ export default {}
   }
   .container-ul5 li{
     float: left;
-    width: 236px;
+    width: 244px;
     height: 300px;
     overflow: hidden;
-    margin: 0 42px;
+    margin: 0 22px;
     .container-ul5-li1-d1 {
       position: relative;
       top: -320px;
